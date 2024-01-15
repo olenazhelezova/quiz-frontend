@@ -4,7 +4,7 @@ import GameSetup from './components/GameSetup'
 
 function App() {
   return (
-    "Hello World!"
+    <GameSetup />
   )
 }
 
