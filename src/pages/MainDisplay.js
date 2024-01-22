@@ -1,10 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import QRCodeComponent from "../components/QRcodeComponent";
+
 
 function MainDisplay() {
     let { sessionId } = useParams();
     return (
-        <h1>{sessionId}</h1>
+        <QRCodeComponent sessionId={ sessionId } title="scan me" />  
     )
 }
 
