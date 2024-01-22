@@ -3,7 +3,7 @@ import React from "react"
 function QuizTopicSelection({ selectedTopic, setTopic, topicList }) {
     const quizTopic = topicList.map((topic, index) => (
         <li key={index}>
-            <button 
+            <div 
                 className="option"
                 onClick={() => setTopic(topic)}
                 style={{
@@ -13,7 +13,7 @@ function QuizTopicSelection({ selectedTopic, setTopic, topicList }) {
                 }}
                 >
                 {topic}
-            </button>
+            </div>
         </li>
     ))
     

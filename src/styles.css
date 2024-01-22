@@ -69,7 +69,7 @@ h3 {
   transform: translateX(-50%);
 }
 
-.slider, .topic-selection {
+form {
   text-align: center;
 }
 
@@ -91,6 +91,33 @@ h3 {
   font-family: Luckiest Guy;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   color: whitesmoke;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option:hover, .game-setup-submit:hover {
+  transform: scale(1.1);
+}
+
+.game-setup-submit{
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+  height: 50px;
+  font-family: Luckiest Guy;
+  font-size: large;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #753dad;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+button.swal2-confirm {
+  font-family: 'Luckiest Guy';
 }
 
 

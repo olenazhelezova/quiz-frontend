@@ -1,10 +1,17 @@
 import React from 'react'
-import GameSetup from './components/GameSetup'
+import GameSetup from './pages/GameSetup'
+import MainDisplay from './pages/MainDisplay';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
   return (
-    <GameSetup />
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<GameSetup />} />
+        <Route path="/main-display/:sessionId" element={<MainDisplay />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

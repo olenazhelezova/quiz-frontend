@@ -6,7 +6,7 @@ const QuizDuration = ({duration, setDuration}) => {
   const renderThumb = (props, state) => {
     return (
       <div {...props}>
-        <div className="thumb-value">{state.valueNow}</div>
+        <div className="thumb-value" data-testid="slider-thumb">{state.valueNow}</div>
       </div>
     );
   };
